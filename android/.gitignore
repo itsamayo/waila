@@ -1,0 +1,5 @@
+.flutter-plugins
+.DS_Store
+.packages
+android/key.properties
+build/
