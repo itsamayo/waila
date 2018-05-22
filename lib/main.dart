@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _selectedChoice = choice;
       var alert = new AlertDialog(
         title: new Text("About"),
-        content: new Text("Waila 1.0.3\n\nAn open source tool developed to classify and generate hashtags from an image using machine learning\n\nTo view code base visit https://github.com/AshKetchumza\n\nCreator: Ashley Sanders\nLicense: Apache License 2.0"),
+        content: new Text("Waila 1.0.5\n\nAn open source tool developed to classify and generate hashtags from an image using machine learning\n\nTo view code base visit https://github.com/AshKetchumza\n\nCreator: Ashley Sanders\nLicense: Apache License 2.0"),
       );
       showDialog(context: context, child: alert);
     });
