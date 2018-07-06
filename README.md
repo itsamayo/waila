@@ -8,7 +8,7 @@ Using their camera or images from their gallery, users can upload an image, have
 GCP - https://cloud.google.com/
 Flutter - https://flutter.io/
 
-## Image classification is done on a nodejs backend I built - no images are stored.
+## Image classification is done on a nodejs backend I built - https://github.com/AshKetchumza/image-classifier-server
 If you want to just use the endpoint for classification you can make a POST call to http://146.185.164.60/api/vision/imageClassify
 It has only one required parameter, which is the image you want classified, sent as a file object.
 
