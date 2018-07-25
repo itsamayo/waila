@@ -158,18 +158,18 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void _getTags(path) async {
+  void _getTags(path) async {        
      var dio = new Dio();
       FormData formData = new FormData.from(<String,dynamic>{        
         // If using in flutter, you can get right file path by path_provider package.
         "file": new UploadFileInfo(new File(path), path)
       });
       try {
-        Response response = await dio.post("http://146.185.164.60/api/vision/imageClassify", data: formData);       
-        this.setState(() {      
+        Response response = await dio.post("https://waila.ml/api/vision/imageClassify", data: formData);       
+        this.setState(() { 
             loaded = true;    
             tags = response.data[0]; 
-            scores = response.data[1];         
+            scores = response.data[1]; 
         });                
         print(tags);   
       }catch(e){
